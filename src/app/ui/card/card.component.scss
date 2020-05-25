@@ -1,0 +1,40 @@
+@import "src/styles";
+
+.container {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  max-width: 500px;
+  box-shadow: 1px 1px 10px $light-gray;
+  border-radius: 2px;
+}
+
+.image {
+  width: 100%;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.votes {
+  line-height: 55px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.userName {
+  font-size: 26px;
+}
+
+.voteButton {
+  margin: auto;
+}
