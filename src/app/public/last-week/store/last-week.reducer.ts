@@ -1,5 +1,4 @@
 import {Meme} from "../../../model/meme";
-import {Action} from '@ngrx/store';
 import * as MemeActions from "./last-week.actions";
 
 let memes: Meme[] = [
@@ -18,8 +17,4 @@ export function LastWeekReducer(state = initialState, action: MemeActions.AddMem
         memes: [...state.memes, action.payload]
       };
   }
-  // return {
-  //   ...state,
-  //   memes: [...state.memes, action.payload]
-  // };
 }

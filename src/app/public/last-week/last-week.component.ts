@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Store} from "@ngrx/store";
 import {Meme} from "../../model/meme";
 import {Observable} from "rxjs";
-import {ADD_MEME, AddMeme} from "./store/last-week.actions";
+import {AddMeme} from "./store/last-week.actions";
 
 @Component({
   selector: 'app-last-week',
