@@ -16,13 +16,15 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {StoreModule} from '@ngrx/store';
 import {LastWeekReducer} from './public/last-week/store/last-week.reducer';
 import { environment } from '../environments/environment';
+import { TwoItemGridComponent } from './ui/layout/two-item-grid/two-item-grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ThisWeekComponent,
     LastWeekComponent,
-    CardComponent
+    CardComponent,
+    TwoItemGridComponent
   ],
   imports: [
     BrowserModule,
