@@ -3,12 +3,15 @@
     <img class="image" src="{{image}}" />
   </div>
   <div class="userInfo">
-    <div>
+    <div *ngIf="!isExample">
       <span class="votes">votes: {{votes}}</span>
     </div>
-    <div class="buttonContainer">
+    <div *ngIf="!isExample" class="buttonContainer">
       <div class="userName">{{userName}}</div>
       <button class="voteButton" mat-mini-fab color="primary">👍</button>
+    </div>
+    <div *ngIf="isExample" class="voteButtonContainer">
+      <button mat-button color="primary">Download</button>
     </div>
   </div>
 </div>

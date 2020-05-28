@@ -10,6 +10,7 @@ export class CardComponent implements OnInit {
   @Input('image') image: string;
   @Input('userName') userName: string;
   @Input('votes') votes: number;
+  @Input('isExample') isExample: boolean;
 
   constructor() { }
 
