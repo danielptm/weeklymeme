@@ -11,6 +11,8 @@ export class CardComponent implements OnInit {
   @Input('userName') userName: string;
   @Input('votes') votes: number;
   @Input('isExample') isExample: boolean;
+  @Input('isDownload') isDownload: boolean;
+  @Input('isWinner') isWinner: boolean;
 
   constructor() { }
 

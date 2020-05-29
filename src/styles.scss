@@ -87,6 +87,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
+.smallerButton {
+  background-color: $light-red;
+  border: none;
+  color: white;
+  width: 75px;
+  padding: 10px;
+  border-radius: 3px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
 .circleButton {
   background-color: $light-red;
   border: none;
