@@ -18,6 +18,11 @@ import {LastWeekReducer} from './public/last-week/store/last-week.reducer';
 import { environment } from '../environments/environment';
 import { TwoItemGridComponent } from './ui/layout/two-item-grid/two-item-grid.component';
 import { FourItemGridComponent } from './ui/layout/four-item-grid/four-item-grid.component';
+import {LoginComponent} from "./private/login/login.component";
+import { CenterPieceComponent } from './ui/layout/center-piece/center-piece.component';
+import { UserLoginComponent } from './ui/user-login/user-login.component';
+import { ProfileComponent } from './private/profile/profile.component';
+import { UserInfoComponent } from './ui/user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { FourItemGridComponent } from './ui/layout/four-item-grid/four-item-grid
     LastWeekComponent,
     CardComponent,
     TwoItemGridComponent,
-    FourItemGridComponent
+    FourItemGridComponent,
+    CenterPieceComponent,
+    LoginComponent,
+    UserLoginComponent,
+    ProfileComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
