@@ -49,3 +49,56 @@ $light-red: #FF6188;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.basicForm {
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.input {
+  width: 275px;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.button {
+  background-color: $light-red;
+  border: none;
+  color: white;
+  width: 125px;
+  padding: 15px;
+  border-radius: 3px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.circleButton {
+  background-color: $light-red;
+  border: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+
+}
