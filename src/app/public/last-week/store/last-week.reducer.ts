@@ -2,8 +2,8 @@ import {Meme} from "../../../model/meme";
 import * as MemeActions from "./last-week.actions";
 
 let memes: Meme[] = [
-  new Meme('1', 1, '1'),
-  new Meme('2', 2, '2')
+  new Meme('daniel', 1, 'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'),
+  new Meme('ted', 2, 'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
 ];
 
 const initialState = {

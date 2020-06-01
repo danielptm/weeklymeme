@@ -1,6 +1,6 @@
 @import "../styles";
 
-$headerHeight: 70px;
+$headerHeight: 80px;
 
 .header {
   background-color: $dark-gray;
@@ -13,7 +13,7 @@ $headerHeight: 70px;
 }
 .mainText {
   font-size: 26px;
-  line-height: 35px;
+  line-height: 50px;
 }
 .subText {
   font-size: 14px;
@@ -26,6 +26,25 @@ $headerHeight: 70px;
   color: white;
   height: $headerHeight;
   text-decoration: none;
-  line-height: 50px;
+  line-height: 80px;
   padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    height: calc(#{$headerHeight} + 20px);
+  }
+  .links > a {
+    line-height: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: calc(#{$headerHeight} + 80px);
+    flex-direction: column;
+    & > .links {
+      justify-content: center;
+    }
+  }
 }

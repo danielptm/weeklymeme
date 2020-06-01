@@ -13,6 +13,7 @@ export class LastWeekComponent implements OnInit {
 
   constructor(private store: Store<{lastWeek: {memes: []}}>) { }
 
+  winner: Meme;
   memes: Observable<{memes: Meme[]}>;
 
   ngOnInit(): void {
