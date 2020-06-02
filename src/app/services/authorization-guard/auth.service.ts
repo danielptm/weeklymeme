@@ -10,7 +10,7 @@ export class AuthGuardService implements CanActivate{
   constructor(private router:Router) {}
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    let result = false;
+    let result = true;
     if (result) {
       return true;
     } else {

@@ -1,65 +1,14 @@
 <div class="winner">
-  <app-card
-    [isWinner]=true
-    [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
-  ></app-card>
+<!--  <app-card-->
+<!--    [isWinner]=true-->
+<!--    [isExample]=true-->
+<!--    [meme] = winner-->
+<!--  ></app-card>-->
 </div>
 <app-four-item-grid>
   <app-card
+    *ngFor="let meme of (memes | async).memes; let i = index;"
     [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
-  ></app-card>
-  <app-card
-    [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
-  ></app-card>
-  <app-card
-    [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
-  ></app-card>
-  <app-card
-    [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
-  ></app-card>
-  <app-card
-    [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
-  ></app-card>
-  <app-card
-    [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
-  ></app-card>
-  <app-card
-    [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
-  ></app-card>
-  <app-card
-    [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
-  ></app-card>
-  <app-card
-    [isExample]=true
-    [userName]="'daniel'"
-    [image]="'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'"
-    [votes]="1"
+    [meme]=meme
   ></app-card>
 </app-four-item-grid>

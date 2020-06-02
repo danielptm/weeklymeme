@@ -1,13 +1,13 @@
 <div class="container">
   <div>
-    <img class="image" src="{{image}}" />
+    <img class="image" src="{{meme.image}}" />
   </div>
   <div class="userInfo">
     <div>
-      <span *ngIf="!isDownload" class="votes">votes: {{votes}}</span>
+      <span *ngIf="!isDownload" class="votes">votes: {{meme.votes}}</span>
     </div>
     <div class="buttonContainer">
-      <div class="userName">{{userName}}</div>
+      <div class="userName">{{meme.userName}}</div>
       <img *ngIf="isWinner" class="winnerBadge" src="assets/winner.svg"/>
       <button *ngIf="!isExample" class="circleButton">vote</button>
     </div>

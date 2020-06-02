@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Meme} from "../../model/meme";
 
 @Component({
   selector: 'app-card',
@@ -7,9 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  @Input('image') image: string;
-  @Input('userName') userName: string;
-  @Input('votes') votes: number;
+  @Input('meme') meme: Meme;
   @Input('isExample') isExample: boolean;
   @Input('isDownload') isDownload: boolean;
   @Input('isWinner') isWinner: boolean;
